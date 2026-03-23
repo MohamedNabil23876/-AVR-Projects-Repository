@@ -1,0 +1,15 @@
+/*
+1-SET_BIT(VAR,BIT_NUM)
+2-CLEAR_BIT(VAR,BIT_NUM)
+3-TOGGLE_BIT(VAR,BIT_NUM)
+4-GET_BIT(VAR,BIT_NUM)
+*/
+
+#define SET_BIT(VAR,BIT_NUM)      ((VAR) |= ((1)<<BIT_NUM))
+
+#define CLEAR_BIT(VAR,BIT_NUM)    ((VAR) &= ~((1)<<BIT_NUM))
+
+#define TOGGLE_BIT(VAR,BIT_NUM)   ((VAR) ^= ((1)<<BIT_NUM))
+
+#define GET_BIT(VAR,BIT_NUM)      ((VAR>>BIT_NUM) & (1))
+
